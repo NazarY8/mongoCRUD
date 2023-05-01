@@ -20,6 +20,8 @@ P.S. Check if mongoDB is install on your mac -> `ps -ef | grep mongod | grep -v 
 2. Install any version on mongoDB or just print on terminal -> `brew install mongodb-community@5.0`
 3. Run mongoDB on your mac, from terminal -> `brew services start mongodb-community@5.0`
 
+P.S.S. By default reactiveMongo should create needed DB and Collection if you don't have it, however, if something goes wrong, you can look at the database options in the `config.yaml` file and create the required database and collection manually.
+
 # How to work with the app?
 
 In general, the idea of the task is quite simple, it was necessary to create **5 endpoints**, 4 of which are simple CRUD operations and one additional pagination. In addition, basic validation for Create should have been added. In my case, I created basic validation for `/create` and `/pagination` (look at `getAll` and `createBook` methods in BookController.
